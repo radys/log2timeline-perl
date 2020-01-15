@@ -2261,7 +2261,7 @@ sub _regscan {
     my $name = $key->as_string();
     $name =~ s/\$\$\$PROTO\.HIV//;
     $name = (split(/\[/, $name))[0];
-    $name =~ s/^CMI-CreateHive{[A-F0-9_\-]+}//;
+    $name =~ s/^CMI-CreateHive\{[A-F0-9_\-]+\}//;
     $name =~ s/^\\//;
     $name =~ s/\s//g;
 

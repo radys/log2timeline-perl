@@ -1,3 +1,7 @@
+Version 0.66.01 (15/01/2020)
+  - Fixed: Unescaped left brace in regex is deprecated here (and will be fatal in Perl 5.30)
+  - [DOCKER]: New Docker Images, Debian Buster 
+
 Version 0.66
   - Few bugfixes. Chrome download db schema changed, LS Quarantine was off by few hours. FTK dirlisting modules had some issues.
   - [LOG2TIMELINE-SIFT] Few additions added by Hiroshi Suzuki.
