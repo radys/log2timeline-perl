@@ -7,7 +7,7 @@ ENV PERL_MM_USE_DEFAULT=1
 RUN cpan install Data::Hexify File::Mork Mac::PropertyList
 RUN apt-get clean &&  rm -rf /var/cache/apt/* /var/lib/apt/lists/*
 
-RUN git clone https://github.com/radys/log2timeline.git /tmp/log2timeline
+RUN git clone https://github.com/radys/log2timeline-perl.git /tmp/log2timeline
 WORKDIR /tmp/log2timeline
 RUN perl Makefile.PL && make && make install
 RUN ln -s /usr/local/bin/log2timeline_legacy /usr/local/bin/log2timeline
